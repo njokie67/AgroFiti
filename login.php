@@ -1,4 +1,5 @@
 <?php 
+error_reporting(0);
 session_start();
 $connection=mysqli_connect("localhost","root","","agrofine");
 //this implies that the connection configuration is imported here
@@ -12,7 +13,8 @@ if (isset($_POST['login'])){
   $hash = md5($password);
  
 // checking email existence
-$sql = "SELECT * FROM credentials WHERE ['email']='$email'" ;
+$sql = "SELECT * FROM credentials WHERE email='$email'" ;
+
 
      $result = mysqli_query($connection, $sql) ;
  
@@ -29,6 +31,7 @@ $sql = "SELECT * FROM credentials WHERE ['email']='$email'" ;
                if(md5($password)==$dbpass){
 $success='You are logged in';
 //redirect
+$_SESSION["username"] = $row["username"]; 
 header("location:shop.php");
             }else{
               

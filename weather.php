@@ -45,7 +45,7 @@
             <div class="humidity">Humidity 60%</div>
             <div class="wind">Wind Speed: 6.2 km/h</div>
         </div>
-    </div> <br><br>
+    </div> <br><br><br>
     
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>

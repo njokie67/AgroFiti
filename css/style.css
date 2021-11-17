@@ -27,6 +27,10 @@ a{
 .navbar .nav-link a:hover{
     color: #fff;
 }
+.nav-item span{
+    display: flex;
+    place-items: center;
+}
 .dropdown-item{
     font-size: 12px
 }

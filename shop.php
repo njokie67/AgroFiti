@@ -41,6 +41,8 @@ if (isset($_POST['add'])) {
 </head>
 
 <body>
+    
+
 <div class="container">
  <div class="col-md-12">
  <div class="row text-center py-5">
@@ -137,10 +139,11 @@ if (isset($_POST['add'])) {
          <button class='btn btn-block btn-warning'>Clear All</button>
          </a>
         </td></tr>
-         
+         </table>
          ";
         
     }
+    
     echo $output;
      ?>
      </div>
@@ -162,6 +165,7 @@ if(isset($_GET['action'])){
     }
 }
 ?>
+
 
 <script src="js/bootstrap.bundle.min.js"></script>
 </body>
